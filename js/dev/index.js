@@ -4500,7 +4500,7 @@ function preloader() {
       }, 10);
     };
     const preloaderTemplate = `
-			<div class="fls-preloader">
+			<div data-fls-lp class="fls-preloader">
 				<div class="fls-preloader__body">
 				<div class="fls-preloader__logo">
 				<img class="fls-preloader__image" src="/assets/img/logo.svg" alt="Image">
