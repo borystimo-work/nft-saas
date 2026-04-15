@@ -2270,7 +2270,7 @@ html:not([data-fls-touch]) .button:hover::after {
 /* Блок з елементами */
 .fls-preloader__body {
   padding: 0.9375rem;
-  max-width: 32rem;
+  width: 9.375rem;
   display: flex;
   flex-direction: column;
   align-items: center;
