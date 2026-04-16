@@ -4500,15 +4500,15 @@ function preloader() {
       }, 10);
     };
     const preloaderTemplate = `
-			<div data-fls-lp class="fls-preloader">
+			<div class="fls-preloader">
 				<div class="fls-preloader__body">
-				<div class="fls-preloader__logo">
-				<img class="fls-preloader__image" src="/assets/img/logo.svg" alt="Image">
-				<svg class="fls-preloader__circle" viewBox="0 0 120 120">
-					<circle class="bg" cx="60" cy="60" r="54"></circle>
-					<circle class="progress" cx="60" cy="60" r="54"></circle>
-				</svg>
-			</div>
+					<div class="fls-preloader__logo">
+						<img class="fls-preloader__image" src="/assets/img/logo.svg" alt="Image">
+						<svg class="fls-preloader__circle" viewBox="0 0 120 120">
+						<circle class="bg" cx="60" cy="60" r="54"></circle>
+						<circle class="progress" cx="60" cy="60" r="54"></circle>
+						</svg>
+					</div>
 					<div class="fls-preloader__counter">0%</div>
 				</div>
 			</div>`;
@@ -4521,7 +4521,6 @@ function preloader() {
     let counter = 0;
     let progress = 0;
     htmlDocument.setAttribute("data-fls-preloader-loading", "");
-    htmlDocument.setAttribute("data-fls-scrolllock", "");
     preloaderImages.forEach((preloaderImage) => {
       const imgClone = document.createElement("img");
       if (imgClone) {
